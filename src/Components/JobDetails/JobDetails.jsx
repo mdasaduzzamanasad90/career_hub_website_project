@@ -90,7 +90,7 @@ const JobDetails = () => {
                     <IoLocationOutline size={40} className="text-[#9873FF]"/>
                     <h1 className="font-bold text-xl">Address : <small className="text-[#00000080]">{contact_information.address}</small></h1>
                 </div>
-                <button onClick={notify} className="btn w-full text-white rounded-lg font-bold text-lg bg-gradient-to-r from-[#7E90FE] to-[#9873FF]">Apply No</button>
+                <button onClick={notify} className="btn w-full text-white rounded-lg font-bold text-lg bg-gradient-to-r from-[#7E90FE] to-[#9873FF]">Apply Now</button>
             </div>
         </div>
         <ToastContainer
