@@ -32,11 +32,11 @@ const JobDetails = () => {
   };
 
   return (
-    <div className="md:mx-40 md:my-20">
+    <div className="md:mx-40 md:my-20 mx-10 my-10">
       <div className="flex justify-center mb-10">
         <img className="h-16 animate-bounce " src={logo} alt="" />
       </div>
-      <div className="md:grid grid-cols-5 gap-5">
+      <div className="md:grid md:grid-cols-5 md:gap-5 grid gap-5">
         <div className="md:col-span-3 rounded-xl border px-4 py-6  text-left space-y-5 shadow-xl">
           <p className="font-bold text-[#00000080] text-xl">
             <span className="text-black">Job Description : </span>

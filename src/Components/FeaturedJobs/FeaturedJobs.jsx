@@ -42,7 +42,7 @@ const changebuttonclosetext = (id)=>{
             }
         </div>
         <div>
-            <button id="allclose" onClick={() => changebuttonclosetext(allclose.innerText)} className="btn w-28 font-bold text-xl">All</button>
+            <button id="allclose" onClick={() => changebuttonclosetext(allclose.innerText)} className="btn w-28 font-bold text-xl mb-20">All</button>
         </div>
       </div>
     );

@@ -1,20 +1,30 @@
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
-  const Links = (
+  const navLinkClass = ({ isActive }) =>
+    isActive && "text-blue-600 font-bold border-b-2 border-[#7E90FE]";
 
+  const Links = (
     <>
       <li className="font-bold text-base text-[#00000080]">
-        <NavLink to='/'>Home</NavLink>
+        <NavLink to="/" className={navLinkClass}>
+          Home
+        </NavLink>
       </li>
       <li className="font-bold text-base text-[#00000080]">
-        <NavLink to='/Statistics'>Statistics</NavLink>
+        <NavLink to="/Statistics" className={navLinkClass}>
+          Statistics
+        </NavLink>
       </li>
       <li className="font-bold text-base text-[#00000080]">
-        <NavLink to="/AppliedJobs">Applied Jobs</NavLink>
+        <NavLink to="/AppliedJobs" className={navLinkClass}>
+          Applied Jobs
+        </NavLink>
       </li>
       <li className="font-bold text-base  text-[#00000080]">
-        <NavLink to='/Blog'>Blog</NavLink>
+        <NavLink to="/Blog" className={navLinkClass}>
+          Blog
+        </NavLink>
       </li>
     </>
   );
@@ -53,7 +63,9 @@ const Header = () => {
         <ul className="menu menu-horizontal px-1">{Links}</ul>
       </div>
       <div className="">
-        <a className="btn rounded-lg bg-gradient-to-r from-[#7E90FE] to-[#9873FF] text-white font-bold text-lg">Star Applying</a>
+        <a className="btn rounded-lg bg-gradient-to-r from-[#7E90FE] to-[#9873FF] text-white font-bold text-lg">
+          Star Applying
+        </a>
       </div>
     </div>
   );

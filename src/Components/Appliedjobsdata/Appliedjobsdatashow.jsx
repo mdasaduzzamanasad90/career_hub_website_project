@@ -10,8 +10,8 @@ const Appliedjobsdatashow = ({ card }) => {
     salary,
   } = card;
   return (
-    <div className="flex justify-between border p-5 rounded-xl mb-5">
-      <div className="flex gap-10">
+    <div className="md:flex justify-between border p-5 rounded-xl mb-5">
+      <div className="md:flex gap-10">
         <div className="flex items-center w-48 bg-[#F4F4F4] p-5 rounded-xl">
           <img className="w-full" src={logo} alt="" />
         </div>

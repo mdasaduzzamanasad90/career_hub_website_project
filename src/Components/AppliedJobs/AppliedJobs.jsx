@@ -41,7 +41,7 @@ const AppliedJobs = () => {
   }, [datajobs]);
 
   return (
-    <div className="md:mx-40 mx-20 mt-20">
+    <div className="md:mx-40 mx-20 md:mt-20 mt-10">
       <div className="flex justify-end ">
         <details className="dropdown">
           <summary className="btn m-1">Filter By</summary>
@@ -58,7 +58,7 @@ const AppliedJobs = () => {
           </ul>
         </details>
       </div>
-      <div className="mt-5 mb-32">
+      <div className="mt-5 md:mb-32 mb-10">
         {jobdisplay.map((card) => (
           <Appliedjobsdatashow key={card.id} card={card} handlejobsfilter={handlejobsfilter}></Appliedjobsdatashow>
         ))}
